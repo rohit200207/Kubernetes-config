@@ -1,0 +1,24 @@
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hrms-core-deployment
+  namespace: devops-tools
+  labels:
+    app: hrms-core
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hrms-core
+  template:
+    metadata:
+      labels:
+        app: hrms-core
+    spec:
+      containers:
+      - name: hrms-core
+        image: docker.floes.io/app/hrms-core:10
+        ports:
+        - containerPort: 3000  # Adjust the port based on your Node.js application
+```
