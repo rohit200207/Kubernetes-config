@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hrms-core
-        image: docker.floes.io/app/hrms-core:10
+        image: rohit055428181/message-creation:latest
         ports:
         - containerPort: 3000  # Adjust the port based on your Node.js application
 ```
