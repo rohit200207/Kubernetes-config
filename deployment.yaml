@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hrms-core
-        image: rohit055428181/message-creation:latest
+        image: rohit055428181/message-creation:2024-06-14-06-55
         ports:
         - containerPort: 6011  # Adjust the port based on your Node.js application
 ```
