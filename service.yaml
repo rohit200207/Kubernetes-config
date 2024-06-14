@@ -10,7 +10,7 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 3000  # Adjust to match your Node.js application's port
+      targetPort: 6011  # Adjust to match your Node.js application's port
   type: ClusterIP
 
 ```
